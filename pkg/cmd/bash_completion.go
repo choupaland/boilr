@@ -51,7 +51,6 @@ source %s
 
 // ConfigureBashCompletion generates bash auto-completion script and installs it.
 var ConfigureBashCompletion = &cli.Command{
-	Hidden: true,
 	Use:    "configure-bash-completion",
 	Short:  "Configure bash the auto-completion",
 	Run: func(c *cli.Command, _ []string) {
