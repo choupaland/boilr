@@ -47,7 +47,21 @@ boilr template download <github-repo-path> <template-tag>
 boilr template download tmrts/boilr-license license
 ```
 
+### Use sub-folder of multi-template repo
+
+```
+boilr template download -p templates/sample https://github.com/jasimmk/boilr-test.git sample
+```
+
+### Use specific branch of github repo
+
 An example for multi template, multi branch forced repo clone
+
+```
+boilr template download -b multi-branch https://github.com/jasimmk/boilr-test.git sample
+```
+
+### Use sub-folder of specific branch and overwrite local template
 
 ```
 boilr template download -p template2/templates/sample -b multi-branch -f https://github.com/jasimmk/boilr-test.git sample
