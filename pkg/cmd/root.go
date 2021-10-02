@@ -29,6 +29,7 @@ func Run() {
 
 	List.PersistentFlags().BoolP("dont-prettify", "", false, "Print only the template names without fancy formatting")
 	Template.AddCommand(List)
+	Template.AddCommand(Update)
 
 	Template.AddCommand(Rename)
 
